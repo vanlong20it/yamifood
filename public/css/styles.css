@@ -1,0 +1,612 @@
+:root {
+    font-size: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+ul, li, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.bg-all {
+    padding: 250px 0 150px;
+    background-image: url(../images/all-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+
+.bg-all h2 {
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+/* Header */
+
+header .bg-light {
+    background-color: #f8f9fa!important
+}
+
+header .navbar {
+    padding: 15px;
+    font-size: 18px
+}
+
+header .navbar .nav-item .nav-link {
+    padding: 5px 20px;
+    color: #000;
+    border-radius: 5px;
+    transition: all .5s ease-in-out
+}
+
+header .navbar .nav-item .nav-link:hover {
+    background-color: #d0a772;
+    color: #fff!important
+}
+
+header .navbar .active .nav-link {
+    background-color: #d0a772;
+    color: #fff!important;
+    border-radius: 5px
+}
+
+header .navbar .dropdown-item {
+    padding: 5px 25px;
+    font-size: 18px;
+    transition: all .5s ease-in-out
+}
+
+header .navbar .dropdown-item:hover {
+    background-color: #d0a772;
+    color: #fff!important
+}
+
+/* Slider */
+
+.slider .img-fluid {
+    filter: brightness(50%);
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+    opacity: .9
+}
+
+.slider .center-banner {
+    padding: 10% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.slider .center-banner strong {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    font-weight: none;
+    background: linear-gradient(45deg, #F29F05 0%, #F2B3BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slider .center-banner p {
+    color: #F2B3BF;
+    font-size: 18px;
+}
+
+.btn-orange {
+    font-size: 1.6em;
+    padding: 10px 30px;
+    color: #f25e6b;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 2px solid #f25e6b
+}
+
+.btn-orange:hover {
+    color: #fff;
+    background-color: #f25e6b
+}
+
+.slider .rectangle {
+    opacity: .7;
+    background-color: #d0a772;
+    color: #fff;
+    padding: 15px 15px 13px;
+    transition: all .5s
+}
+
+.slider .rectangle:hover {
+    background-color: #000
+}
+
+.slider .rectangle.left {
+    position: absolute;
+    left: 0
+}
+
+.slider .rectangle.right {
+    position: absolute;
+    right: 0
+}
+
+.sider .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: #fff solid 2px;
+    background-color: unset;
+    cursor: pointer
+}
+
+.slider .carousel-indicators li.active {
+    border: #d0a772 solid 2px;
+    background-color: #d0a772
+}
+
+.slider .carousel-control-next, .slider .carousel-control-prev {
+    opacity: 1;
+    width: 0
+}
+
+/* Story */
+
+.story {
+    padding: 100px 0;
+    text-align: center
+}
+
+.story h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 35px
+}
+
+.story h1 span {
+    font-family: 'Major Mono Display', monospace;
+    color: #d0a772
+}
+
+.story h4 {
+    font-size: 20px
+}
+
+.story p {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.story img {
+    box-shadow: -8px -8px 10px #d0a772
+}
+
+.story .detail {
+    padding: 5.55% 0
+}
+
+/* Banner */
+
+.banner {
+    color: #fff;
+    background-image: url(../images/qt-bg.jpg);
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center
+}
+
+.banner h1 {
+    letter-spacing: 2px;
+    font-size: 33px;
+    justify-content: stretch;
+}
+
+.banner p:before, .banner p:after {
+    content: "--";
+    color: #f25e6b
+}
+
+.banner p {
+    font-size: 20px;
+    font-weight: bolder
+}
+
+/* Menu */
+.menu{
+    font-family: 'Playfair Display', serif;
+}
+.menu .heading {
+    margin-bottom: 5%
+}
+
+.menu .heading h1 {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+.menu .heading p {
+    font-size: 16px
+}
+
+.menu .type {
+    display: inline-block;
+    border: 2px solid #e4e4e4;
+    padding: 1px;
+    border-radius: 5px
+}
+
+.menu .btn {
+    color: #000;
+    border: unset;
+    box-shadow: unset;
+    width: 120px
+}
+
+.menu .btn.active {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.295);
+    background-color: #d0a772;
+    color: #ffffff
+}
+
+.menu .category {
+    margin-bottom: 5%
+}
+
+.menu .row-fix {
+    margin-bottom: 2%
+}
+
+.menu .item {
+    position: relative;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+}
+
+.menu .item hr {
+    margin: 0;
+    border-top: 2px solid #1F1F26;
+}
+
+.menu .item .overlay {
+    color: #fff;
+    padding: 0px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f25e6ade;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: all .45s ease-in-out;
+}
+
+.menu .item:hover .overlay {
+    height:100%;
+}
+
+.menu .overlay h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 23.5px;
+    font-weight: bolder;
+    color: #1F1F26;
+}
+
+.menu .overlay .description {
+    font-size: 18px
+}
+
+.menu .overlay .price {
+    color: #1F1F26;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 35px;
+    font-style: italic
+}
+
+.menu .overlay .order {
+    text-align: center;
+}
+
+.menu .overlay .btn {
+    background-color: #1F1F26;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    color: #F29F05;
+    border-radius: 5px;
+}
+
+.menu .overlay .btn:hover {
+    color: #f25e6b;
+}
+
+/* Gallery */
+
+.gallery .heading h1 {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+.gallery .heading p {
+    font-size: 17px
+}
+
+.gallery .heading {
+    margin-bottom: 3%
+}
+
+.gallery .grid img {
+    margin-bottom: 30px;
+    box-shadow: -2x 2px 3px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out
+}
+
+.gallery .grid img:hover {
+    filter: saturate(1.5);
+    transform: scale(1.03, 1.03);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7)
+}
+
+.gallery .review {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000af;
+}
+
+.gallery .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .content img {
+    width: auto;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery .content .close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 4rem;
+    margin-right: 10px;
+    color: red;
+}
+
+/* Customer reviews */
+
+.customer .heading h1 {
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder
+}
+
+.customer .heading p {
+    font-size: 17px
+}
+
+.customer .heading {
+    margin-bottom: 3%
+}
+
+.customer .reviews {
+    text-align: center;
+}
+
+.customer .reviews .img-fluid {
+    max-width: 20%;
+    height: auto;
+}
+
+.customer .content {
+    margin-top: 3rem;
+    padding: 0% 3%;
+}
+
+.customer .content>.name {
+    text-transform: uppercase;
+    font-size: 25px !important;
+    color: #d0a772;
+}
+
+.customer .content p.detail {
+    font-size: 15px;
+    line-height: 2rem;
+    margin: 0 auto;
+    letter-spacing: 1.35px;
+}
+
+.customer img.border {
+    padding: 3px;
+    border: solid 3px rgba(0, 68, 255, 0.623) !important;
+}
+
+.customer .slider .slide {
+    display: none;
+}
+
+.customer .slider .slide.active {
+    display: block;
+}
+
+.customer .slider .img-fluid {
+    filter: brightness(100%);
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.customer .control {
+    color: #F29F05;
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.customer .control .left, .customer .control .right {
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 20px 0px;
+    background-color: #d0a772;
+}
+
+.contact .icon {
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    color: #d0a772;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition:all .5s ease-in-out;
+}
+.contact .icon:hover{
+    transform:rotate(180deg);
+}
+
+.contact .overflow-hidden {
+    overflow: hidden;
+}
+
+.contact h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 0px;
+}
+
+.contact p {
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0000008f;
+    color: white;
+}
+
+footer .content {
+    position: relative;
+}
+
+footer .content h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F29F05;
+}
+
+footer .content p {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    line-height: 25px;
+}
+footer .content:nth-child(2) p{
+    font-size:20px;
+}
+
+footer .content .submit input {
+    width: 100%;
+    line-height: 50px;
+    font-size: 19px;
+    border: none;
+    float: left;
+    margin-bottom: 2px;
+    padding: 0px 5px;
+    background-color: black;
+    overflow: visible;
+    display: block;
+    color: #F29F05;
+}
+
+::placeholder {
+    color: #F29F05;
+}
+
+footer .content .submit button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #d0a772;
+    border: none;
+    transition: all .5s ease;
+    display: inline-block;
+}
+
+footer .content .submit button:hover {
+    background-color: black;
+}
+
+footer .content hr {
+    border: solid #d0a772 2px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+    background-color: #f25e6b;
+    color: #1F1F26;
+}
+
+.copyright p {
+    opacity: .8;
+    letter-spacing: 2px;
+    margin:0;
+    padding:0;
+}
+
+.story, .banner, .menu, .gallery, .customer, .contact, footer {
+    padding: 50px 0;
+}

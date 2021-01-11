@@ -1,0 +1,41 @@
+
+.reservation-box {
+    padding: 100px 0px;
+}
+
+.reservation-box .head {
+    text-align: center;
+}
+
+.reservation-box .head h2 {
+    font-size: 30px;
+}
+
+.reservation-box .head p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.reservation-box .table h3 {
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.reservation-box .table{
+    text-align:center;
+}
+.reservation-box .table input, select, option {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 15px;
+    padding: 0px 5px;
+    font-weight: 300;
+    line-height: 50px;
+}
+/* .reservation-box .table button.btn-orange{
+    color: #f25e6b;
+    transition:all .6s ease-out;
+}
+.reservation-box .table button.btn-orange:hover{
+    color: white;
+} */

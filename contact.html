@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamifood Restaurant</title>
+    <link rel="icon" href="./public/images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <script src="./public/js/jquery-3.4.1.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/contact.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="./public/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="./reservation.html">Reservation</a>
+                                <a class="dropdown-item" href="./stuff.html">Stuff</a>
+                                <a class="dropdown-item" href="./gallery.html">Gallery</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="./blog.html">Blog</a>
+                                <a class="dropdown-item" href="./blog-single.html">Blog Single</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact page -->
+    <div class="bg-all">
+        <h2>Contact</h2>
+    </div>
+    <!-- map -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.5850084236217!2d106.76018248890747!3d10.851291122997218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752797e321f8e9%3A0xb3ff69197b10ec4f!2zVHLGsOG7nW5nIENhbyDEkOG6s25nIEPDtG5nIG5naOG7hyBUaOG7pyDEkOG7qWM!5e0!3m2!1svi!2sus!4v1586321894005!5m2!1svi!2sus"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- Contact content -->
+    <div class="contact-box">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="heading text-center">
+                    <h1>Contact</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+                <div class="content">
+                    <form action="./contact.html" method="post">
+                        <div class="form-box">
+                            <div class="box name">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="box email">
+                                <input type="email" name="email" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="box number">
+                                <select name="person" id="person">
+                                    <option disabled
+                                     selected>Please Select Person*</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="box area">
+                                <textarea name="text" id="text" rows="3" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <h4>Phone</h4>
+                        <p>+84 33-568-4403</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <h4>Email</h4>
+                        <p>vanlong20it@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="overflow-hidden">
+                        <h4>Location</h4>
+                        <p>Ho Chi Minh City, VietNam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="content">
+                        <h3>About Us</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit praesentium libero porro
+                            repudiandae mollitia neque alias voluptates magnam voluptate, quis fuga sed explicabo
+                            et,
+                            nostrum tempore consectetur at reiciendis dolore.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="content">
+                        <h3>Opening Hours</h3>
+                        <hr>
+                        <p>Monday: Closed</p>
+                        <p>Tue-Wed: 9AM - 10PM</p>
+                        <p>Thu-Fri: 9AM - 10PM</p>
+                        <p>Sat-Sun: 5PM - 10PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="content">
+                        <h3>Contact Information</h3>
+                        <hr>
+                        <p>Vo Van Ngan Street, Thu Duc</p>
+                        <p>+8412121212</p>
+                        <p>vlnguyen@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="content">
+                        <div class="submit">
+                            <h3>Subscribe</h3>
+                            <hr>
+                            <form action="#" method="post">
+                                <input type="email" name="" id="" placeholder="Email Address...">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>All right Reserved &copy; 2020 Yamifood Restaurant Design By: vanlong20it</p>
+    </div>
+    <!-- javascript -->
+    <script src="./public/font-awesome/js/all.min.js"></script>
+    <script src="./public/js/jquery-3.4.1.min.js"></script>
+    <script src="./public/js/popper.min.js"></script>
+    <script src="./public/js/apps.js"></script>
+</body>
+
+</html>
