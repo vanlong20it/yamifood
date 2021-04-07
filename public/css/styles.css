@@ -1,18 +1,20 @@
 :root {
-    font-size: 10px
+    font-size: 10px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
     padding: 0;
     margin: 0;
-    list-style: none
+    list-style: none;
 }
 
 .bg-all {
@@ -24,7 +26,7 @@ ul, li, ol {
 }
 
 .bg-all h2 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     text-align: center;
     color: white;
     font-size: 40px;
@@ -33,41 +35,41 @@ ul, li, ol {
 /* Header */
 
 header .bg-light {
-    background-color: #f8f9fa!important
+    background-color: #f8f9fa !important;
 }
 
 header .navbar {
     padding: 15px;
-    font-size: 18px
+    font-size: 18px;
 }
 
 header .navbar .nav-item .nav-link {
     padding: 5px 20px;
     color: #000;
     border-radius: 5px;
-    transition: all .5s ease-in-out
+    transition: all 0.5s ease-in-out;
 }
 
 header .navbar .nav-item .nav-link:hover {
     background-color: #d0a772;
-    color: #fff!important
+    color: #fff !important;
 }
 
 header .navbar .active .nav-link {
     background-color: #d0a772;
-    color: #fff!important;
-    border-radius: 5px
+    color: #fff !important;
+    border-radius: 5px;
 }
 
 header .navbar .dropdown-item {
     padding: 5px 25px;
     font-size: 18px;
-    transition: all .5s ease-in-out
+    transition: all 0.5s ease-in-out;
 }
 
 header .navbar .dropdown-item:hover {
     background-color: #d0a772;
-    color: #fff!important
+    color: #fff !important;
 }
 
 /* Slider */
@@ -77,7 +79,7 @@ header .navbar .dropdown-item:hover {
     width: 100%;
     object-fit: cover;
     height: 700px;
-    opacity: .9
+    opacity: 0.9;
 }
 
 .slider .center-banner {
@@ -86,20 +88,20 @@ header .navbar .dropdown-item:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center
+    text-align: center;
 }
 
 .slider .center-banner strong {
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     font-size: 50px;
     font-weight: none;
-    background: linear-gradient(45deg, #F29F05 0%, #F2B3BF 100%);
+    background: linear-gradient(45deg, #f29f05 0%, #f2b3bf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .slider .center-banner p {
-    color: #F2B3BF;
+    color: #f2b3bf;
     font-size: 18px;
 }
 
@@ -109,34 +111,34 @@ header .navbar .dropdown-item:hover {
     color: #f25e6b;
     text-transform: uppercase;
     font-weight: bolder;
-    border: 2px solid #f25e6b
+    border: 2px solid #f25e6b;
 }
 
 .btn-orange:hover {
     color: #fff;
-    background-color: #f25e6b
+    background-color: #f25e6b;
 }
 
 .slider .rectangle {
-    opacity: .7;
+    opacity: 0.7;
     background-color: #d0a772;
     color: #fff;
     padding: 15px 15px 13px;
-    transition: all .5s
+    transition: all 0.5s;
 }
 
 .slider .rectangle:hover {
-    background-color: #000
+    background-color: #000;
 }
 
 .slider .rectangle.left {
     position: absolute;
-    left: 0
+    left: 0;
 }
 
 .slider .rectangle.right {
     position: absolute;
-    right: 0
+    right: 0;
 }
 
 .sider .carousel-indicators li {
@@ -145,38 +147,39 @@ header .navbar .dropdown-item:hover {
     border-radius: 100%;
     border: #fff solid 2px;
     background-color: unset;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .slider .carousel-indicators li.active {
     border: #d0a772 solid 2px;
-    background-color: #d0a772
+    background-color: #d0a772;
 }
 
-.slider .carousel-control-next, .slider .carousel-control-prev {
+.slider .carousel-control-next,
+.slider .carousel-control-prev {
     opacity: 1;
-    width: 0
+    width: 0;
 }
 
 /* Story */
 
 .story {
     padding: 100px 0;
-    text-align: center
+    text-align: center;
 }
 
 .story h1 {
-    font-family: 'Major Mono Display', monospace;
-    font-size: 35px
+    font-family: "Major Mono Display", monospace;
+    font-size: 35px;
 }
 
 .story h1 span {
-    font-family: 'Major Mono Display', monospace;
-    color: #d0a772
+    font-family: "Major Mono Display", monospace;
+    color: #d0a772;
 }
 
 .story h4 {
-    font-size: 20px
+    font-size: 20px;
 }
 
 .story p {
@@ -185,11 +188,11 @@ header .navbar .dropdown-item:hover {
 }
 
 .story img {
-    box-shadow: -8px -8px 10px #d0a772
+    box-shadow: -8px -8px 10px #d0a772;
 }
 
 .story .detail {
-    padding: 5.55% 0
+    padding: 5.55% 0;
 }
 
 /* Banner */
@@ -202,7 +205,7 @@ header .navbar .dropdown-item:hover {
     background-attachment: fixed;
     background-position: center center;
     padding: 100px 0;
-    text-align: center
+    text-align: center;
 }
 
 .banner h1 {
@@ -211,71 +214,83 @@ header .navbar .dropdown-item:hover {
     justify-content: stretch;
 }
 
-.banner p:before, .banner p:after {
+.banner p:before,
+.banner p:after {
     content: "--";
-    color: #f25e6b
+    color: #f25e6b;
 }
 
 .banner p {
     font-size: 20px;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 /* Menu */
-.menu{
-    font-family: 'Playfair Display', serif;
+.menu {
+    font-family: "Playfair Display", serif;
 }
 .menu .heading {
-    margin-bottom: 5%
+    margin-bottom: 5%;
 }
 
 .menu .heading h1 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     text-transform: uppercase;
     font-size: 40px;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 .menu .heading p {
-    font-size: 16px
+    font-size: 16px;
 }
 
 .menu .type {
     display: inline-block;
     border: 2px solid #e4e4e4;
     padding: 1px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 .menu .btn {
     color: #000;
     border: unset;
     box-shadow: unset;
-    width: 120px
+    width: 120px;
 }
 
 .menu .btn.active {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.295);
     background-color: #d0a772;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .menu .category {
-    margin-bottom: 5%
+    margin-bottom: 5%;
 }
 
 .menu .row-fix {
-    margin-bottom: 2%
+    margin-bottom: 2%;
 }
 
 .menu .item {
     position: relative;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+    animation: anim 0.3s ease-out forwards;
 }
 
+@keyframes anim {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 .menu .item hr {
     margin: 0;
-    border-top: 2px solid #1F1F26;
+    border-top: 2px solid #1f1f26;
 }
 
 .menu .item .overlay {
@@ -289,11 +304,11 @@ header .navbar .dropdown-item:hover {
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: all .45s ease-in-out;
+    transition: all 0.45s ease-in-out;
 }
 
 .menu .item:hover .overlay {
-    height:100%;
+    height: 100%;
 }
 
 .menu .overlay h3 {
@@ -301,19 +316,19 @@ header .navbar .dropdown-item:hover {
     margin-top: 10px;
     font-size: 23.5px;
     font-weight: bolder;
-    color: #1F1F26;
+    color: #1f1f26;
 }
 
 .menu .overlay .description {
-    font-size: 18px
+    font-size: 18px;
 }
 
 .menu .overlay .price {
-    color: #1F1F26;
+    color: #1f1f26;
     margin-bottom: 0;
     text-align: center;
     font-size: 35px;
-    font-style: italic
+    font-style: italic;
 }
 
 .menu .overlay .order {
@@ -321,11 +336,11 @@ header .navbar .dropdown-item:hover {
 }
 
 .menu .overlay .btn {
-    background-color: #1F1F26;
+    background-color: #1f1f26;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
-    color: #F29F05;
+    color: #f29f05;
     border-radius: 5px;
 }
 
@@ -336,30 +351,30 @@ header .navbar .dropdown-item:hover {
 /* Gallery */
 
 .gallery .heading h1 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     text-transform: uppercase;
     font-size: 40px;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 .gallery .heading p {
-    font-size: 17px
+    font-size: 17px;
 }
 
 .gallery .heading {
-    margin-bottom: 3%
+    margin-bottom: 3%;
 }
 
 .gallery .grid img {
     margin-bottom: 30px;
     box-shadow: -2x 2px 3px rgba(0, 0, 0, 0.2);
-    transition: all .2s ease-in-out
+    transition: all 0.2s ease-in-out;
 }
 
 .gallery .grid img:hover {
     filter: saturate(1.5);
     transform: scale(1.03, 1.03);
-    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7)
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .gallery .review {
@@ -402,18 +417,18 @@ header .navbar .dropdown-item:hover {
 /* Customer reviews */
 
 .customer .heading h1 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: "Major Mono Display", monospace;
     text-transform: uppercase;
     font-size: 40px;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 .customer .heading p {
-    font-size: 17px
+    font-size: 17px;
 }
 
 .customer .heading {
-    margin-bottom: 3%
+    margin-bottom: 3%;
 }
 
 .customer .reviews {
@@ -430,7 +445,7 @@ header .navbar .dropdown-item:hover {
     padding: 0% 3%;
 }
 
-.customer .content>.name {
+.customer .content > .name {
     text-transform: uppercase;
     font-size: 25px !important;
     color: #d0a772;
@@ -471,14 +486,15 @@ header .navbar .dropdown-item:hover {
 }
 
 .customer .control {
-    color: #F29F05;
+    color: #f29f05;
     margin-top: 20px;
     display: flex;
     justify-items: center;
     justify-content: center;
 }
 
-.customer .control .left, .customer .control .right {
+.customer .control .left,
+.customer .control .right {
     margin: 0px 10px;
     cursor: pointer;
     font-size: 25px;
@@ -503,10 +519,10 @@ header .navbar .dropdown-item:hover {
     background-color: white;
     border-radius: 50%;
     margin-right: 20px;
-    transition:all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
-.contact .icon:hover{
-    transform:rotate(180deg);
+.contact .icon:hover {
+    transform: rotate(180deg);
 }
 
 .contact .overflow-hidden {
@@ -540,7 +556,7 @@ footer .content {
 footer .content h3 {
     font-size: 20px;
     text-transform: uppercase;
-    color: #F29F05;
+    color: #f29f05;
 }
 
 footer .content p {
@@ -548,8 +564,8 @@ footer .content p {
     letter-spacing: 1.3px;
     line-height: 25px;
 }
-footer .content:nth-child(2) p{
-    font-size:20px;
+footer .content:nth-child(2) p {
+    font-size: 20px;
 }
 
 footer .content .submit input {
@@ -563,11 +579,11 @@ footer .content .submit input {
     background-color: black;
     overflow: visible;
     display: block;
-    color: #F29F05;
+    color: #f29f05;
 }
 
 ::placeholder {
-    color: #F29F05;
+    color: #f29f05;
 }
 
 footer .content .submit button {
@@ -580,7 +596,7 @@ footer .content .submit button {
     color: white;
     background-color: #d0a772;
     border: none;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     display: inline-block;
 }
 
@@ -589,7 +605,7 @@ footer .content .submit button:hover {
 }
 
 footer .content hr {
-    border: solid #d0a772 2px;
+    border-bottom: solid #d0a772 2px;
 }
 
 .copyright {
@@ -597,16 +613,22 @@ footer .content hr {
     padding: 10px 0px;
     font-size: 14px;
     background-color: #f25e6b;
-    color: #1F1F26;
+    color: #1f1f26;
 }
 
 .copyright p {
-    opacity: .8;
+    opacity: 0.8;
     letter-spacing: 2px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-.story, .banner, .menu, .gallery, .customer, .contact, footer {
+.story,
+.banner,
+.menu,
+.gallery,
+.customer,
+.contact,
+footer {
     padding: 50px 0;
 }
