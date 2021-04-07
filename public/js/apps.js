@@ -1,24 +1,24 @@
 $(document).ready(function () {
     // Menu
-    function menu() {
-        var type = $('.type');
-        type.on('click', 'button', function () {
-            //Đánh dấu button được click
-            $(this).addClass('active').siblings().removeClass('active');
-            var filter = $(this).attr("data-type");//Lấy loại sản phẩm
-            var all = $(".menu .category .type button:first").attr("data-type");//Lấy giá trị trong thuộc tính
-            if (filter + "" != all + "") {
-                // In ra sản phẩm theo từng loại
-                $(".list [data-type=" + filter + "]").slideDown("slow").siblings().hide();
-                $(".list [data-type=" + filter + "]").slideDown("slow").show();
-            }
-            else {
-                // In ra tất cả các sản phẩm
-                $(".menu .list .row-fix").slideDown("slow").show();
-            }
-        });
-    }
-    menu();
+    // function menu() {
+    //     var type = $('.type');
+    //     type.on('click', 'button', function () {
+    //         //Đánh dấu button được click
+    //         $(this).addClass('active').siblings().removeClass('active');
+    //         var filter = $(this).attr("data-type");//Lấy loại sản phẩm
+    //         var all = $(".menu .category .type button:first").attr("data-type");//Lấy giá trị trong thuộc tính
+    //         if (filter + "" != all + "") {
+    //             // In ra sản phẩm theo từng loại
+    //             $(".list [data-type=" + filter + "]").slideDown("slow").siblings().hide();
+    //             $(".list [data-type=" + filter + "]").slideDown("slow").show();
+    //         }
+    //         else {
+    //             // In ra tất cả các sản phẩm
+    //             $(".menu .list .row-fix").slideDown("slow").show();
+    //         }
+    //     });
+    // }
+    // menu();
 
     // Gallery
     function gallery() {
@@ -39,7 +39,7 @@ $(document).ready(function () {
             });
             review.on("click", function () {
                 review.css("display", "none");
-            })
+            });
         });
     }
     gallery();
@@ -55,7 +55,11 @@ $(document).ready(function () {
             if (index < 0) {
                 index = size - 1;
             }
-            $(".customer .slide:eq(" + index + ")").fadeIn("slow").css("display", "block").siblings().css("display", "none");
+            $(".customer .slide:eq(" + index + ")")
+                .fadeIn("slow")
+                .css("display", "block")
+                .siblings()
+                .css("display", "none");
         });
 
         right.on("click", function () {
@@ -63,7 +67,11 @@ $(document).ready(function () {
             if (index > size - 1) {
                 index = 0;
             }
-            $(".customer .slide:eq(" + index + ")").fadeIn("slow").css("display", "block").siblings().css("display", "none");
+            $(".customer .slide:eq(" + index + ")")
+                .fadeIn("slow")
+                .css("display", "block")
+                .siblings()
+                .css("display", "none");
         });
 
         setInterval(function () {
@@ -71,19 +79,54 @@ $(document).ready(function () {
             if (index > size - 1) {
                 index = 0;
             }
-            $(".customer .slide:eq(" + index + ")").fadeIn("slow").css("display", "block").siblings().css("display", "none");
+            $(".customer .slide:eq(" + index + ")")
+                .fadeIn("slow")
+                .css("display", "block")
+                .siblings()
+                .css("display", "none");
         }, 10000);
     }
     slider();
 
     // stuff mouseover
-    function stuff(){
-        $(".box").on("mouseenter",function(){
+    function stuff() {
+        $(".box").on("mouseenter", function () {
             $(this).children(".team-content").slideDown().show();
         });
-        $(".box").on("mouseleave",function(){
+        $(".box").on("mouseleave", function () {
             $(this).children(".team-content").slideUp();
         });
     }
     stuff();
-})
+
+    // Menu
+    const menu = document.querySelector(".menu");
+    const btnList = menu.querySelectorAll(".category .type button");
+    const listProduct = menu.querySelectorAll(".menu .list [data-type]");
+    console.log(listProduct);
+    console.log(btnList);
+    btnList.forEach((item, index) => {
+        item.onclick = () => {
+            menu.querySelector(".category .type .active").classList.remove(
+                "active"
+            );
+            item.classList.add("active");
+            if (item.getAttribute("data-type") === "all") {
+                for (let i = 0; i < listProduct.length; i++) {
+                    listProduct[i].style.display = "block";
+                }
+            } else {
+                for (let i = 0; i < listProduct.length; i++) {
+                    if (
+                        listProduct[i].getAttribute("data-type") ===
+                        item.getAttribute("data-type")
+                    ) {
+                        listProduct[i].style.display = "block";
+                    } else {
+                        listProduct[i].style.display = "none";
+                    }
+                }
+            }
+        };
+    });
+});
